@@ -8,7 +8,7 @@ export default function App() {
       <div className="container">
         <Weather />
         <footer>
-          This project was coded by{" "}
+          Project coded by{" "}
           <a
             href="https://laughing-chandrasekhar-438be0.netlify.app/"
             target="_blank"
