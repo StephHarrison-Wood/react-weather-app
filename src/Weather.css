@@ -1,12 +1,14 @@
 .weather {
+  background-image: url(./clouds\ copy.jpg);
+  background-size: cover;
   border: 1px solid #dadde1;
   border-radius: 15px;
+  color: #f1f1f1;
   font-family: "Work Sans", sans-serif;
   padding: 16px;
 }
 
 .weather h1 {
-  color: black;
   display: block;
   font-size: 28px;
   line-height: 30px;
