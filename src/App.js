@@ -18,6 +18,7 @@ export default function App() {
           </a>{" "}
           and is{" "}
           <a
+            rel="noreferrer"
             href="https://github.com/StephHarrison-Wood/Steph-Weather-App"
             target="_blank"
           >
