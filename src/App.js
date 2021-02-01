@@ -10,6 +10,7 @@ export default function App() {
         <footer>
           Project coded by{" "}
           <a
+            rel="noreferrer"
             href="https://laughing-chandrasekhar-438be0.netlify.app/"
             target="_blank"
           >
