@@ -19,7 +19,7 @@ export default function App() {
           and is{" "}
           <a
             rel="noreferrer"
-            href="https://github.com/StephHarrison-Wood/Steph-Weather-App"
+            href="https://github.com/StephHarrison-Wood/react-weather-app"
             target="_blank"
           >
             open-sourced on Github
