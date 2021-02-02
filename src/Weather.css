@@ -27,13 +27,6 @@
   list-style: none;
 }
 
-.weather canvas {
-  display: inline-block;
-  height: 64px;
-  margin-right: 10px;
-  width: 64px;
-}
-
 .weather .temperature {
   font-size: 64px;
   font-weight: 400;
