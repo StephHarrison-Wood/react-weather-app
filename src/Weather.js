@@ -4,8 +4,9 @@ import axios from "axios";
 import "./Weather.css";
 
 export default function Weather(props) {
-  const [city, setCity] = useState(props.defaultCity);
   const [weatherData, setWeatherData] = useState({ ready: false });
+  const [city, setCity] = useState(props.defaultCity);
+
   function handleResponse(response) {
     setWeatherData({
       ready: true,
@@ -14,24 +15,25 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       city: response.data.name,
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       description: response.data.weather[0].description,
     });
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
+
+  function handleCityChange(event) {
+    setCity(event.target.value);
+    search();
   }
 
   function search() {
     const apiKey = "b6f22d190d1b4915f58b50eef956214d";
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
-  }
-
-  function handleSubmit(event) {
-    event.preventDefault();
-  }
-
-  function handleCityChange(event) {
-    setCity(event.target.value);
-    search();
   }
 
   if (weatherData.ready) {
