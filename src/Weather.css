@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .weather {
   background-image: url(./clouds\ copy.jpg);
   background-size: cover;
@@ -48,4 +51,9 @@ canvas {
 .container {
   padding: 5px;
   margin: 0 auto;
+}
+
+.col {
+  padding-left: 5px;
+  padding-right: 5px;
 }
