@@ -6,9 +6,12 @@
   padding: 10px 5px;
 }
 
-.WeatherForecast canvas {
+canvas {
   display: block;
   margin: 5px auto;
-  width: 44;
-  height: 44;
+  width: 54px;
+}
+
+element.style {
+  width: 44px;
 }
